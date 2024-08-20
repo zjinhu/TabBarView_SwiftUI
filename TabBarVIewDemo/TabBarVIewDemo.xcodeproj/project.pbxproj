@@ -11,7 +11,7 @@
 		601379972C58BAFD0058378D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601379962C58BAFD0058378D /* ContentView.swift */; };
 		601379992C58BAFF0058378D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601379982C58BAFF0058378D /* Assets.xcassets */; };
 		6013799C2C58BAFF0058378D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6013799B2C58BAFF0058378D /* Preview Assets.xcassets */; };
-		601379A72C5B338A0058378D /* BrickKit in Frameworks */ = {isa = PBXBuildFile; productRef = 601379A62C5B338A0058378D /* BrickKit */; };
+		8143BADA2C748E4D00635586 /* TabBarView_SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8143BAD92C748E4D00635586 /* TabBarView_SwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				601379A72C5B338A0058378D /* BrickKit in Frameworks */,
+				8143BADA2C748E4D00635586 /* TabBarView_SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +39,7 @@
 			children = (
 				601379932C58BAFD0058378D /* TabBarVIewDemo */,
 				601379922C58BAFD0058378D /* Products */,
+				8143BAD82C748E4D00635586 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +70,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8143BAD82C748E4D00635586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,7 +94,7 @@
 			);
 			name = TabBarVIewDemo;
 			packageProductDependencies = (
-				601379A62C5B338A0058378D /* BrickKit */,
+				8143BAD92C748E4D00635586 /* TabBarView_SwiftUI */,
 			);
 			productName = TabBarVIewDemo;
 			productReference = 601379912C58BAFD0058378D /* TabBarVIewDemo.app */;
@@ -361,9 +369,10 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		601379A62C5B338A0058378D /* BrickKit */ = {
+		8143BAD92C748E4D00635586 /* TabBarView_SwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = BrickKit;
+			package = 601379A52C5B338A0058378D /* XCLocalSwiftPackageReference "../../TabBarView_SwiftUI" */;
+			productName = TabBarView_SwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -18,3 +18,9 @@ let package = Package(
             name: "TabBarView_SwiftUI"),
     ]
 )
+
+package.platforms = [
+    .iOS(.v15),
+]
+
+package.swiftLanguageVersions = [.v5]

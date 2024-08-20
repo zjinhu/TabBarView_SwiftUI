@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-
+import TabBarView_SwiftUI
 @main
 struct TabBarVIewDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView() 
         }
     }
 }
