@@ -1,10 +1,23 @@
 import SwiftUI
 
-public class TabBarItemSize: ObservableObject {
+public class TabBarObservable: ObservableObject {
     @Published public var size: CGSize = .zero
     @Published public var axis: CGFloat = 0.0
     
+    @Published public var isShowTabbar: Bool = true
     public init() {}
+    
+    public func showTabbar(){
+        withAnimation(.easeInOut) {
+            isShowTabbar = true
+        }
+    }
+    
+    public func hideTabbar(){
+        withAnimation(.easeInOut) {
+            isShowTabbar = false
+        }
+    }
 }
 
 struct TabBarItemSizePreferenceKey: PreferenceKey {

@@ -1,6 +1,6 @@
 import SwiftUI
 public struct TabBarView<TabItem: TabBarItemable, Content: View>: View {
-    @EnvironmentObject var tabItem: TabBarItemSize
+    @EnvironmentObject var tabItem: TabBarObservable
     
     private let selectedItem: TabBarSelection<TabItem>
     private let animation: Binding<Animation>
@@ -34,8 +34,11 @@ public struct TabBarView<TabItem: TabBarItemable, Content: View>: View {
                 VStack {
                     Spacer()
                     
-                    self.tabBarViewStyle.tabBarView(with: geo) {
-                        .init(self.tabItems)
+                    if tabItem.isShowTabbar{
+                        self.tabBarViewStyle.tabBarView(with: geo) {
+                            .init(self.tabItems)
+                        }
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
                     }
                 }
                 .edgesIgnoringSafeArea(.bottom)
@@ -45,6 +48,7 @@ public struct TabBarView<TabItem: TabBarItemable, Content: View>: View {
             self.tabs = value
         }
     }
+
 }
 
 extension TabBarView {
